@@ -1,12 +1,35 @@
 // Reset
-@import '../node_modules/modern-normalize/modern-normalize.css';
+@import '~modern-normalize/modern-normalize.css';
 
 // Variables
 @import './styles/variables';
 
+// RFS
+@import "~rfs/scss";
+
+// Utilities
+@import './styles/utilities';
+
 // Globals
 body {
+  background-color: $background;
+  color: $on-background;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  &:focus {
+    outline: 2px solid rgba(0,125,250,0.6);
+  }
+}
+
+button {
+  &:focus {
+    outline: 2px solid rgba(0,125,250,0.6);
+  }
 }

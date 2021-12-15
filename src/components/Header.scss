@@ -1,0 +1,127 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.header {
+  padding: 1rem 0;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__desktop-left {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+  &__desktop-brand {
+    display: inline-block;
+    margin-right: 1rem;
+    img {
+      vertical-align: middle;
+      display: inline-block;
+      width: 48px;
+    }
+  }
+  &__desktop-menu {
+    ul {
+      display: flex;
+      padding-left: 0;
+      list-style: none;
+      li {
+        a {
+          display: inline-block;
+          white-space: nowrap;
+          padding: .5rem;
+          color: #fff;
+          opacity: 0.75;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+  &__desktop-right {
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+  &__desktop-signin {
+    margin-right: .5rem;
+    @include button(transparent, #fff);
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__desktop-signup {
+    @include button($accent, $on-accent);
+  }
+
+  &__mobile-left {
+    display: none;
+    align-items: center;
+    @media (max-width: 767.98px) {
+      display: flex;
+    }
+  }
+  &__mobile-brand {
+    display: inline-block;
+    margin-right: 1rem;
+    img {
+      vertical-align: middle;
+      display: inline-block;
+      width: 44px;
+    }
+  }
+  &__mobile-right {
+    position: relative;
+    display: none;
+    @media (max-width: 767.98px) {
+      display: flex;
+    }
+  }
+  &__toggler {
+    display: none;
+    width: 44px;
+    height: 44px;
+    @include button(transparent, #fff);
+    @include centerer;
+  }
+  &__mobile-menu {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    ul {
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+      margin: 0;
+      background-color: $surface;
+      padding: 1rem;
+      list-style: none;
+      text-align: right;
+      li {
+        display: list-item;
+        white-space: nowrap;
+        a {
+          display: block;
+          padding: .5rem;
+        }
+      }
+    }
+  }
+}
+
+// Media queries
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+
+}
