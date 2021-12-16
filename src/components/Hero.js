@@ -17,7 +17,7 @@ function Hero() {
             </div>
             <button class="subscribe-form__submit" tabindex="0" type="submit">Get started</button>
           </form>
-          <div class="hero__social-proof">
+          <div class="hero__users">
             <img src={users} alt="..." />
             <p>1,600 users have been approved for early access in the past 24h.</p>
           </div>
