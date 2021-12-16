@@ -1,0 +1,7 @@
+@import './styles/variables';
+
+.app {
+  &__gradient {
+    background: $background-radial-gradient-top-left;
+  }
+}
