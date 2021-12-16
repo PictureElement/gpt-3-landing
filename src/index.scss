@@ -1,13 +1,5 @@
-// Reset
 @import '~modern-normalize/modern-normalize.css';
-
-// Variables
 @import './styles/variables';
-
-// RFS
-@import "~rfs/scss";
-
-// Utilities
 @import './styles/utilities';
 
 // Globals
@@ -28,7 +20,16 @@ a {
   }
 }
 
-button {
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+button, input {
   &:focus {
     outline: 2px solid rgba(0,125,250,0.6);
   }

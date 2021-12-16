@@ -8,14 +8,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__desktop-left {
+  &__left {
     display: flex;
     align-items: center;
-    @media (max-width: 767.98px) {
-      display: none;
-    }
   }
-  &__desktop-brand {
+  &__brand {
     display: inline-block;
     margin-right: 1rem;
     img {
@@ -24,7 +21,7 @@
       width: 48px;
     }
   }
-  &__desktop-menu {
+  &__inline-menu {
     ul {
       display: flex;
       padding-left: 0;
@@ -46,54 +43,12 @@
       display: none;
     }
   }
-  &__desktop-right {
-    @media (max-width: 767.98px) {
-      display: none;
-    }
-  }
-  &__desktop-signin {
-    margin-right: .5rem;
-    @include button(transparent, #fff);
-    opacity: 0.75;
-    &:hover {
-      opacity: 1;
-    }
-  }
-  &__desktop-signup {
-    @include button($accent, $on-accent);
-  }
-
-  &__mobile-left {
-    display: none;
-    align-items: center;
-    @media (max-width: 767.98px) {
-      display: flex;
-    }
-  }
-  &__mobile-brand {
-    display: inline-block;
-    margin-right: 1rem;
-    img {
-      vertical-align: middle;
-      display: inline-block;
-      width: 44px;
-    }
-  }
-  &__mobile-right {
+  &__right {
     position: relative;
-    display: none;
-    @media (max-width: 767.98px) {
-      display: flex;
-    }
+    display: flex;
   }
-  &__toggler {
-    display: none;
-    width: 44px;
-    height: 44px;
-    @include button(transparent, #fff);
-    @include centerer;
-  }
-  &__mobile-menu {
+  &__dropdown-menu {
+    z-index: 1;
     position: absolute;
     top: 54px;
     right: 0;
@@ -113,7 +68,54 @@
           padding: .5rem;
         }
       }
+      button {
+        margin: .5rem 0;
+      }
     }
+  }
+  &__signin {
+    margin-right: .5rem;
+    @include button(#fff, #333);
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+    &_dropdown {
+      display: none;
+      width: 100%;
+      @media (max-width: 575.98px) {
+        display: block !important;
+      }
+    }
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+  &__signup {
+    @include button($accent, $on-accent);
+    &_dropdown {
+      display: none;
+      width: 100%;
+      @media (max-width: 575.98px) {
+        display: block !important;
+      }
+    }
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
+  &__toggler-wrapper {
+    display: none;
+    @media (max-width: 767.98px) {
+      display: block;
+    }
+  }
+  &__toggler {
+    margin-left: 1rem;
+    width: 44px;
+    height: 44px;
+    @include button(transparent, #fff);
+    @include centerer;
   }
 }
 
