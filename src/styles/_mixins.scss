@@ -5,7 +5,7 @@
   box-decoration-break: clone;
 }
 
-@mixin button($bg, $on-bg) {
+@mixin filled-button($bg, $on-bg) {
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -23,6 +23,43 @@
   cursor: pointer;
   &:hover {
     background-color: darken($bg, 10%);
+  }
+}
+
+@mixin text-button($color) {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  padding: 0.375rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    &::after {
+      transform: scaleX(1);
+    }
+  }
+  &::before, &::after {
+    position: absolute;
+    bottom: -0.15em;
+    left: 0;
+    width: calc(100% - 1em);
+    height: 2px;
+    pointer-events: none;
+    content: "";
+    background-color: $color;
+    transition: transform .3s ease;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+  }
+  &::before {
+    opacity: .2;
+    transform: scaleX(1);
   }
 }
 

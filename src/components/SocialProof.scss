@@ -1,0 +1,16 @@
+@import "~rfs/scss";
+
+.social-proof {
+  @include margin-top(2rem);
+  @include margin-bottom(7rem);
+  &__container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__image {
+    margin: .5rem 1rem;
+    height: 24px;
+    width: auto;
+  }
+}

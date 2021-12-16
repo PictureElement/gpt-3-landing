@@ -1,10 +1,12 @@
-import { Header, Hero, Footer } from './components';
+import { Header, Hero, SocialProof, About, Footer } from './components';
 
 function App() {
   return (
     <div>
       <Header />
       <Hero />
+      <SocialProof />
+      <About />
       <Footer />
     </div>
   );

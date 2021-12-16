@@ -75,11 +75,7 @@
   }
   &__signin {
     margin-right: .5rem;
-    @include button(#fff, #333);
-    opacity: 0.75;
-    &:hover {
-      opacity: 1;
-    }
+    @include filled-button(#fff, #333);
     &_dropdown {
       display: none;
       width: 100%;
@@ -92,7 +88,7 @@
     }
   }
   &__signup {
-    @include button($accent, $on-accent);
+    @include filled-button($accent, $on-accent);
     &_dropdown {
       display: none;
       width: 100%;
@@ -114,7 +110,7 @@
     margin-left: 1rem;
     width: 44px;
     height: 44px;
-    @include button(transparent, #fff);
+    @include filled-button(transparent, #fff);
     @include centerer;
   }
 }
