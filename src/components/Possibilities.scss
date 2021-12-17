@@ -15,6 +15,9 @@
     flex-shrink: 0;
     flex-basis: 50%;
     @include padding-right(8rem);
+    @media (max-width: 767.98px) {
+      padding-right: 0;
+    }
   }
   &__image {
     max-width: 100%;
