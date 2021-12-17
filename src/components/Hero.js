@@ -8,7 +8,7 @@ function Hero() {
     <section className="hero">
       <div className="container hero__container">
         <div className="hero__left">
-          <h1 className="hero__title text-gradient">Let's build something amazing with OpenAI</h1>
+          <h1 className="hero__title text-gradient">Let's build something amazing with GPT-3 OpenAI</h1>
           <p className="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus porttitor euismod. Donec eget accumsan ex. Praesent vestibulum quis ligula sed suscipit.</p>
           <form className="subscribe-form">
             <div className="subscribe-form__group">

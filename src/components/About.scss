@@ -3,6 +3,7 @@
 @import '../styles/mixins';
 
 .about {
+  @include margin-bottom(8rem);
   &__surface {
     border-radius: 4px;
     background: $surface-radial-gradient-bottom-right;
@@ -20,7 +21,7 @@
   }
   &__link {
     @include text-button(#fff);
-    @include margin-top(1rem);
+    margin-top: 1rem;
     @include margin-bottom(4rem);
     svg {
       vertical-align: middle;

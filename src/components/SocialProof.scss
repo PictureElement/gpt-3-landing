@@ -1,8 +1,7 @@
 @import "~rfs/scss";
 
 .social-proof {
-  @include margin-top(2rem);
-  @include margin-bottom(7rem);
+  @include margin-bottom(8rem);
   &__container {
     justify-content: center;
     display: flex;

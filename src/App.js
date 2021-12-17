@@ -1,5 +1,5 @@
 import './App.scss';
-import { Header, Hero, SocialProof, About, Features, Footer } from './components';
+import { Header, Hero, SocialProof, About, Features, Footer, Possibilities } from './components';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <SocialProof />
       <About />
       <Features />
+      <Possibilities />
       <Footer />
     </div>
   );

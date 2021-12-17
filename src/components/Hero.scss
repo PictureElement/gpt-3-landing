@@ -3,7 +3,8 @@
 @import '../styles/mixins';
 
 .hero {
-  padding: 1rem 0;
+  // border: 1px solid red;
+  overflow: hidden;
   &__container {
     display: flex;
     flex-grow: 1;
@@ -15,7 +16,7 @@
   &__left {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 55%;
+    flex-basis: 51%;
   }
   &__title {
     @include text-gradient($text-gradient);
@@ -52,9 +53,16 @@
   }
   &__right {
     img {
-      max-width: 100%;
+      max-width: 130%;
       height: auto;
+      @media (max-width: 991.98px) {
+        max-width: 100%;
+      }
     }
+  }
+  @media (max-width: 991.98px) {
+    @include margin-top(4rem);
+    @include margin-bottom(4rem);
   }
 }
 

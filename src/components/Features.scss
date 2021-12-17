@@ -3,8 +3,7 @@
 @import '../styles/mixins';
 
 .features {
-  @include margin-top(7rem);
-  @include margin-bottom(7rem);
+  @include margin-bottom(8rem);
   &__surface {
     display: flex;
     @media (max-width: 767.98px) {
@@ -12,7 +11,9 @@
     }
   }
   &__left {
-    flex: 3;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
     @include padding-right(8rem);
   }
   &__title {
@@ -22,16 +23,18 @@
   }
   &__link {
     @include text-button(#fff);
-    @include margin-top(1rem);
+    margin-top: 1rem;
     @include margin-bottom(4rem);
     svg {
       vertical-align: middle;
     }
   }
   &__right {
-    flex: 4;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
     .feature:not(:last-child) {
-      @include margin-bottom(2rem);
+      margin-bottom: 2rem;
     }
   }
 }
