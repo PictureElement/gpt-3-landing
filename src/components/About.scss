@@ -4,6 +4,7 @@
 
 .about {
   &__surface {
+    border-radius: 4px;
     background: $surface-radial-gradient-bottom-right;
     @include padding(3.25rem);
   }
