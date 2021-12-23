@@ -1,0 +1,22 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import "~rfs/scss";
+
+.post {
+  height: 100%;
+  background-color: $surface;
+  &__image {
+    width: 100%;
+  }
+  &__body {
+    @include padding(2rem);
+    color: $on-surface;
+  }
+  &__date {
+    margin-bottom: .5rem;
+  }
+  &__title {
+    @include font-size($h3-size);
+    line-height: 1.3;
+  }
+}

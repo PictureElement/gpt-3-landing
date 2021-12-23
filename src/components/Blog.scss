@@ -1,0 +1,117 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+@import "~rfs/scss";
+
+.blog {
+  @include margin-bottom(8rem);
+  &__introduction {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    @include text-gradient($text-gradient);
+    @include font-size($h2-size);
+    @include margin-bottom(3rem);
+    line-height: 1.3;
+    margin-right: 2rem;
+    @media (max-width: 767.98px) {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    @include text-button(#fff);
+    svg {
+      vertical-align: middle;
+    }
+    &_desktop {
+      align-self: flex-start;
+      @media (max-width: 767.98px) {
+        display: none;
+      }
+    }
+    &_mobile {
+      display: none;
+      @media (max-width: 767.98px) {
+        display: inline-block;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  &__item {
+    border-radius: 4px;
+    overflow: hidden;
+    &_1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      .post__title {
+        @include font-size($h2-size);
+      }
+    }
+    &_2 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    &_3 {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+    &_4 {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    &_5 {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+    @media (max-width: 991.98px) {
+      .post__date {
+        font-size: .75rem;
+      }
+      .post__title {
+        font-size: 1rem;
+      }
+      &_1 {
+        .post__date {
+          font-size: 1rem;
+        }
+        .post__title {
+          @include font-size($h3-size);
+        }
+      }
+    }
+    @media (max-width: 767.98px) {
+      .post__date {
+        font-size: 1rem;
+      }
+      .post__title {
+        @include font-size($h3-size);
+      }
+    }
+  }
+  &__link {
+    .post {
+      transition: opacity .15s ease-in-out;
+    }
+    &:hover {
+      .post {
+        opacity: 0.6;
+      }
+    }
+  }
+  @media (max-width: 767.98px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -6,6 +6,7 @@
 }
 
 @mixin filled-button($bg, $on-bg) {
+  white-space: nowrap;
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
@@ -27,6 +28,7 @@
 }
 
 @mixin text-button($color) {
+  white-space: nowrap;
   position: relative;
   display: inline-block;
   font-weight: 400;
