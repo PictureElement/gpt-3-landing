@@ -27,22 +27,22 @@ function Blog() {
             </li>
             <li className="media-list__item media-list__item_2">
               <a href="." className="media-list__link">
-                <Article />
+                <Article date="Jun 24, 2021" title="GPT-3 powers the next generation of apps 1." />
               </a>
             </li>
             <li className="media-list__item media-list__item_3">
               <a href="." className="media-list__link">
-                <Article />
+                <Article date="Dec 24, 2021" title="GPT-3 powers the next generation of apps 2." />
               </a>
             </li>
             <li className="media-list__item media-list__item_4">
               <a href="." className="media-list__link">
-                <Article />
+                <Article date="Jan 24, 2021" title="GPT-3 powers the next generation of apps 3." />
               </a>
             </li>
             <li className="media-list__item media-list__item_5">
               <a href="." className="media-list__link">
-                <Article />
+                <Article date="Aug 24, 2021" title="GPT-3 powers the next generation of apps 4." />
               </a>
             </li>
           </ul>
