@@ -3,11 +3,16 @@
 @import "~rfs/scss";
 
 .footer {
-  @include padding(8rem 0);
   background: $surface-radial-gradient-bottom-right;
+  a {
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+  }
   &__introduction {
     text-align: center;
-    @include margin-bottom(6rem);
+    @include padding(8rem 0);
   }
   &__title {
     @include text-gradient($text-gradient);
@@ -40,5 +45,10 @@
   }
   &__statement {
     margin-bottom: 1rem;
+  }
+  &__credits {
+    text-align: center;
+    @include margin-top(8rem);
+    @include padding-bottom(2rem);
   }
 }

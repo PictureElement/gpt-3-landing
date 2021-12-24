@@ -61,6 +61,7 @@ function Footer() {
             <List title="Projects" items={projectsItems} />
           </div>
         </div>
+        <div className="footer__credits">Designed by <a target="_blank" rel="noopener noreferrer" href="https://www.arshakir.com/project/freebie-gpt-3-landing-page">AR Shakir</a>. Developed by <a href="https://www.msof.me/" target="_blank" rel="noopener noreferrer">Marios Sofokleous</a></div>
       </div>
     </footer>
   )
