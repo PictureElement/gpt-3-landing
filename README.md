@@ -17,7 +17,7 @@ $ npm run start
 |---|---|
 |`npm run start`|Run the app in the development mode.
 |`npm run build`|Build the app for production.
-|`npm run deploy`|Publish required files and folders to your gh-pages branch and deploy project to GitHub Pages.
+|`npm run deploy`|Publish required files and folders to your gh-pages branch and deploy app to GitHub Pages.
 
 
 ## Credits
