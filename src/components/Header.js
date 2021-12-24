@@ -29,7 +29,7 @@ function Header() {
           <div className="header__right">
               <button type="button" className="header__signin">Sign in</button>
               <button type="button" className="header__signup">Sign up</button>
-              <div class="header__toggler-wrapper">
+              <div className="header__toggler-wrapper">
                 {isDropdownMenuVisible
                   ? <button onClick={() => SetIsDropdownMenuVisible(false)} className="header__toggler" type="button" aria-controls="navbarSupportedContent" aria-label="Toggle navigation"><RiCloseLine /></button>
                   : <button onClick={() => SetIsDropdownMenuVisible(true)} className="header__toggler" type="button" aria-controls="navbarSupportedContent" aria-label="Toggle navigation"><RiMenu3Line /></button>

@@ -12,12 +12,12 @@ function Hero() {
           <p className="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus porttitor euismod. Donec eget accumsan ex. Praesent vestibulum quis ligula sed suscipit.</p>
           <form className="subscribe-form">
             <div className="subscribe-form__group">
-              <label className="visually-hidden" for="email-subscribe">Enter your email</label>
+              <label className="visually-hidden" htmlFor="email-subscribe">Enter your email</label>
               <input className="subscribe-form__input" type="email" id="email-subscribe" name="email" placeholder="example@email.com" required="" value="" />
             </div>
-            <button class="subscribe-form__submit" tabindex="0" type="submit">Get started</button>
+            <button className="subscribe-form__submit" tabIndex="0" type="submit">Get started</button>
           </form>
-          <div class="hero__users">
+          <div className="hero__users">
             <img src={users} alt="..." />
             <p>1,600 users have been approved for early access in the past 24h.</p>
           </div>

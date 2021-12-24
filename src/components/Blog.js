@@ -9,7 +9,7 @@ function Blog() {
       <div className="container">
           <div className="blog__introduction">
             <h2 className="blog__title">A lot is happening and we're blogging about it.</h2>
-            <a className="blog__link blog__link_desktop" href=".">All stories <RiArrowRightSLine /></a>
+            <a className="blog__link" href=".">All stories <RiArrowRightSLine /></a>
           </div>
           <ul className="media-list">
             <li className="media-list__item media-list__item_1">
@@ -46,7 +46,6 @@ function Blog() {
               </a>
             </li>
           </ul>
-          <a className="blog__link blog__link_mobile" href=".">All stories <RiArrowRightSLine /></a>
       </div>
     </section>
   )

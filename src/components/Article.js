@@ -1,6 +1,5 @@
 import React from 'react';
 import './Article.scss';
-import { RiArrowRightSLine } from "react-icons/ri";
 
 function Article() {
   return (

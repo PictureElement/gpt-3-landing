@@ -17,6 +17,7 @@
     @include padding-right(8rem);
     @media (max-width: 767.98px) {
       padding-right: 0;
+      @include margin-bottom(5rem);
     }
   }
   &__title {
@@ -26,8 +27,7 @@
   }
   &__link {
     @include text-button(#fff);
-    margin-top: 1rem;
-    @include margin-bottom(4rem);
+    margin-top: .5rem;
     svg {
       vertical-align: middle;
     }
@@ -37,7 +37,7 @@
     flex-shrink: 0;
     flex-basis: 50%;
     .feature:not(:last-child) {
-      margin-bottom: 2rem;
+      @include margin-bottom(4rem);
     }
   }
 }

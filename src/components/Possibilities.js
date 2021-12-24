@@ -12,12 +12,14 @@ function Possibilities() {
             <img className="possibilities__image" src={possibilities} alt="..." />
           </div>
           <div className="possibilities__right">
-            <h2 className="possibilities__title">The possibilities are beyond your imagination</h2>
+            <div className="possibilities__introduction">
+              <h2 className="possibilities__title">The possibilities are beyond your imagination</h2>
+              <a className="possibilities__link" href=".">Sign up for the demo <RiArrowRightSLine /></a>
+            </div>
             <div className="possibilities__text">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum vehicula tellus, eu porta purus sagittis vel. Sed ultricies consectetur felis, sollicitudin bibendum lectus ornare vitae.</p>                              
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum vehicula tellus, eu porta purus sagittis vel. Sed ultricies consectetur felis, sollicitudin bibendum lectus ornare vitae.</p>                              
             </div>
-            <a className="possibilities__link" href=".">Sign up for the demo <RiArrowRightSLine /></a>
           </div>
         </div>
       </div>

@@ -4,40 +4,50 @@
 
 .about {
   @include margin-bottom(8rem);
+  &__introduction {
+    display: flex;
+    justify-content: space-between;
+    @include margin-bottom(5rem);
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+  }
   &__surface {
     border-radius: 4px;
     background: $surface-radial-gradient-bottom-right;
-    @include padding(3.25rem);
+    @include padding(3rem);
   }
   &__top {
     display: flex;
     justify-content: space-between;
   }
   &__title {
-    max-width: 500px;
+    @include margin-right(2rem);
     @include text-gradient($text-gradient);
     @include font-size($h2-size);
     line-height: 1.3;
   }
   &__link {
     @include text-button(#fff);
-    margin-top: 1rem;
-    @include margin-bottom(4rem);
     svg {
       vertical-align: middle;
+    }
+    align-self: flex-start;
+    @media (max-width: 767.98px) {
+      margin-top: .5rem;
     }
   }
   &__bottom {
     display: flex;
     justify-content: space-between;
     .feature {
-      padding-right: 2rem;
+      @include padding-right(2rem);
     }
     @media (max-width: 767.98px) {
       flex-direction: column;
       .feature {
-        &:not(:last-child) {  
-          margin-bottom: 2rem;
+        &:not(:last-child) {
+          @include margin-bottom(4rem);
         }
         padding-right: 0;
       }

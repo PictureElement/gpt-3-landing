@@ -35,7 +35,7 @@
       flex-direction: column;
     }
     @media (max-width: 991.98px) {
-      margin-bottom: 2rem;
+      @include margin-bottom(2rem);
     }
     img {
       margin-right: 1rem;
