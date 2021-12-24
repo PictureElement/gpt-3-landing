@@ -7,9 +7,9 @@ function Links({ title, items }) {
       <h3 className="list__title">{title}</h3>
       <ul className="list__group">
         {
-          items.map(item => {
+          items.map((item, index) => {
             return (
-              <li><a href={item.url}>{item.name}</a></li>
+              <li key={index}><a href={item.url}>{item.name}</a></li>
             )
           })
         }

@@ -25,18 +25,28 @@ const communityItems = [
   {name: 'Slack Overflow', url: '/stack-overflow'},
 ];
 
+const projectsItems = [
+  {name: 'Bootstrap 5', url: '/'},
+  {name: 'Bootstrap 4', url: '/'},
+  {name: 'Icons', url: '/'},
+  {name: 'RFS', url: '/'}
+];
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <h2 className="footer__title">Do you want to step into the future before others?</h2>
-        <button type="button" className="footer__button">Sign up for the demo</button>
-        <div className="footer__links">
+        <div className="footer__introduction">
+          <h2 className="footer__title">Do you want to step into the future before others?</h2>
+          <button type="button" className="footer__button">Sign up for the demo</button>
+        </div>
+        <div className="footer__row">
           <div>
             <a className="footer__brand" href=".">
               <img src={logo} alt="logo" />
             </a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in faucibus magna. Pellentesque sed diam venenatis, ullamcorper nulla ac, tempor sapien.</p>
+            <p className="footer__statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in faucibus magna. Pellentesque sed diam venenatis, ullamcorper nulla ac, tempor sapien.</p>
+            <p>© 2021 OpenAI. All rights reserved.</p>
           </div>
           <div>
             <List title="Links" items={linksItems} />
@@ -46,6 +56,9 @@ function Footer() {
           </div>
           <div>
             <List title="Community" items={communityItems} />
+          </div>
+          <div>
+            <List title="Projects" items={projectsItems} />
           </div>
         </div>
       </div>
