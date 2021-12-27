@@ -12,15 +12,35 @@
     @media (max-width: 767.98px) {
       flex-direction: column;
     }
+    position: relative;
+    z-index: 1;
   }
   &__surface {
     border-radius: .3rem;
     background: $surface;
     @include padding(3rem);
-  }
-  &__top {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 200px;
+      background: $surface-radial-gradient-top-left;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+      background: $surface-radial-gradient-bottom-right;
+    }
   }
   &__title {
     @include margin-right(2rem);
@@ -41,6 +61,8 @@
   &__bottom {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
     .feature {
       @include padding-right(2rem);
       &__title {

@@ -1,7 +1,16 @@
 @import './styles/variables';
 
 .app {
-  &__gradient {
-    // background: $background-radial-gradient-top-left;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 50vw;
+    background: $bg-radial-gradient-top-left;
+    z-index: -1;
   }
 }

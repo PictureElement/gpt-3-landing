@@ -1,6 +1,7 @@
 import React from 'react';
 import Article from './Article';
 import './Blog.scss';
+import postImage from '../assets/post.jpg';
 import { RiArrowRightSLine } from "react-icons/ri";
 
 function Blog() {
@@ -15,7 +16,7 @@ function Blog() {
             <li className="media-list__item media-list__item_1">
               <a href="." className="media-list__link">
                 <article className="post">
-                  <img src="https://placehold.co/1600x900/png" className="post__image" alt="..." />
+                  <img src={postImage} className="post__image" alt="..." />
                   <div className="post__body">
                     <div>
                       <div className="post__date">Jun 24, 2021</div>

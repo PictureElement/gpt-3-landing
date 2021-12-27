@@ -4,16 +4,16 @@ import { Header, Hero, SocialProof, About, Features, Possibilities, CTA, Blog, F
 function App() {
   return (
     <div className="app">
-      <div className="app__gradient">
-        <Header />
+      <Header />
+      <main>
         <Hero />
-      </div>
-      <SocialProof />
-      <About />
-      <Features />
-      <Possibilities />
-      <CTA />
-      <Blog />
+        <SocialProof />
+        <About />
+        <Features />
+        <Possibilities />
+        <CTA />
+        <Blog />
+      </main>
       <Footer />
     </div>
   );

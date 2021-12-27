@@ -5,6 +5,22 @@
 
 .footer {
   background: $surface;
+  overflow: hidden;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    background: $surface-radial-gradient-bottom-right;
+    z-index: 0;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
   &__introduction {
     text-align: center;
     @include padding(8rem 0);
