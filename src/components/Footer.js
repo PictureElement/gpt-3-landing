@@ -46,7 +46,7 @@ function Footer() {
               <img src={logo} alt="logo" />
             </a>
             <p className="footer__statement">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in faucibus magna. Pellentesque sed diam venenatis, ullamcorper nulla ac, tempor sapien.</p>
-            <p>© 2021 OpenAI. All rights reserved.</p>
+            <p className="footer__copyright">© 2021 OpenAI. All rights reserved.</p>
           </div>
           <div>
             <List title="Links" items={linksItems} />

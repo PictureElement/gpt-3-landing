@@ -1,31 +1,57 @@
-// Font
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
-// Variables
-$font-family: 'Manrope', sans-serif;
+// $font-family: 'Manrope', sans-serif;
 
-// Gradient tool: https://angrytools.com/gradient/
-$text-gradient: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-$overline-linear-gradient: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+// $text-gradient: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+// $on-text-gradient: #000;
+
+// $background-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 30%);
+// $surface-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(7, 77, 147, 1) 0%, rgba(4, 44, 84, 1) 25%);
+// $surface-radial-gradient-bottom-right: radial-gradient(circle at 100% 100%, rgba(7, 77, 147, 1) 0%, rgba(4, 44, 84, 1) 25%);
+
+// $background: #040C18;
+// $on-background: #81AFDD;
+
+// $surface: #042C54;
+// $on-surface: #81AFDD;
+
+// $accent: #FF4820;
+
+// $h1-size: 3.375rem;
+// $h2-size: 2.25rem;
+// $h3-size: 1.5rem;
+
+// $rfs-factor: 10;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+$font-family: 'Poppins', sans-serif;
+
+$text-gradient: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+$on-text-gradient: #000;
+
 $background-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 30%);
 $surface-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(7, 77, 147, 1) 0%, rgba(4, 44, 84, 1) 25%);
 $surface-radial-gradient-bottom-right: radial-gradient(circle at 100% 100%, rgba(7, 77, 147, 1) 0%, rgba(4, 44, 84, 1) 25%);
 
-$background: #040C18;
-$on-background: #81AFDD;
+$background: #fff;
+$on-background: #627597;
 
-$surface: #042C54;
-$on-surface: #81AFDD;
+$surface: #040d21;
+$on-surface: #8193b2;
 
-$accent: #FF4820;
-$on-accent: #fff;
-
-$footer: #031B34;
-$on-footer: #fff;
+$accent: #2ea44f;
 
 $h1-size: 3.375rem;
 $h2-size: 2.25rem;
 $h3-size: 1.5rem;
-    
-// RFS
+
 $rfs-factor: 10;
+
+
+
+
+
+// Gradient tool: https://angrytools.com/gradient/

@@ -1,6 +1,7 @@
 @import '../styles/variables';
 @import "~rfs/scss";
 @import '../styles/mixins';
+@import '../styles/functions';
 
 .about {
   @include margin-bottom(8rem);
@@ -13,8 +14,8 @@
     }
   }
   &__surface {
-    border-radius: 4px;
-    background: $surface-radial-gradient-bottom-right;
+    border-radius: .3rem;
+    background: $surface;
     @include padding(3rem);
   }
   &__top {
@@ -28,7 +29,7 @@
     line-height: 1.3;
   }
   &__link {
-    @include text-button(#fff);
+    @include text-button(color-contrast($surface));
     svg {
       vertical-align: middle;
     }
@@ -42,6 +43,12 @@
     justify-content: space-between;
     .feature {
       @include padding-right(2rem);
+      &__title {
+        color: color-contrast($surface);
+      }
+      &__text {
+        color: $on-surface;
+      }
     }
     @media (max-width: 767.98px) {
       flex-direction: column;

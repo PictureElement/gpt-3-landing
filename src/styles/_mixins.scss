@@ -5,13 +5,13 @@
   box-decoration-break: clone;
 }
 
-@mixin filled-button($bg, $on-bg) {
+@mixin filled-button($bg) {
   white-space: nowrap;
   display: inline-block;
   font-weight: 400;
   line-height: 1.5;
-  background-color: $bg;
-  color: $on-bg;
+  background-color: rgba($bg, 1);
+  color: color-contrast($bg);
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -23,7 +23,7 @@
   transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
   cursor: pointer;
   &:hover {
-    background-color: darken($bg, 10%);
+    background-color: rgba($bg, .75);
   }
 }
 

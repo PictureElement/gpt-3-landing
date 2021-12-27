@@ -1,6 +1,7 @@
 @import '../styles/variables';
 @import "~rfs/scss";
 @import '../styles/mixins';
+@import '../styles/functions';
 
 .possibilities {
   @include margin-bottom(8rem);
@@ -42,10 +43,11 @@
   &__text {
     p {
       margin-bottom: 1rem;
+      color: $on-background;
     }
   }
   &__link {
-    @include text-button(#fff);
+    @include text-button(color-contrast($background));
     margin-top: .5rem;
     svg {
       vertical-align: middle;

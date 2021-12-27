@@ -1,5 +1,6 @@
 @import '../styles/variables';
 @import '../styles/mixins';
+@import '../styles/functions';
 @import "~rfs/scss";
 
 .post {
@@ -10,13 +11,14 @@
   }
   &__body {
     @include padding(2rem);
-    color: $on-surface;
   }
   &__date {
     margin-bottom: .5rem;
+    color: $on-surface;
   }
   &__title {
     @include font-size($h3-size);
     line-height: 1.3;
+    color: color-contrast($surface);
   }
 }

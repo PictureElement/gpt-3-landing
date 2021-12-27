@@ -16,7 +16,7 @@ body {
 a {
   text-decoration: none;
   color: unset;
-  transition: opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: opacity .15s ease-in-out;
   &:focus {
     outline: 2px solid rgba(0,125,250,0.6);
   }
@@ -35,4 +35,8 @@ button, input {
   &:focus {
     outline: 2px solid rgba(0,125,250,0.6);
   }
+}
+
+::placeholder {
+  color: rgba(0,0,0,.54);
 }

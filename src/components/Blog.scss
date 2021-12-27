@@ -1,5 +1,6 @@
 @import '../styles/variables';
 @import '../styles/mixins';
+@import '../styles/functions';
 @import "~rfs/scss";
 
 .blog {
@@ -22,7 +23,7 @@
     }
   }
   &__link {
-    @include text-button(#fff);
+    @include text-button(color-contrast($background));
     svg {
       vertical-align: middle;
     }
@@ -38,7 +39,7 @@
   grid-template-columns: 2fr 1fr 1fr;
   @include rfs(2rem, gap);
   &__item {
-    border-radius: 4px;
+    border-radius: .3rem;
     overflow: hidden;
     &_1 {
       grid-column: 1 / 2;
