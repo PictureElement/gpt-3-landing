@@ -31,7 +31,7 @@
           display: inline-block;
           white-space: nowrap;
           padding: .5rem;
-          color: white;
+          color: color-contrast($background);
           opacity: 0.75;
           &:hover {
             opacity: 1;
@@ -75,7 +75,13 @@
   }
   &__signin {
     margin-right: .5rem;
-    @include filled-button(#fff, #333);
+    
+    @include filled-button(transparent, color-contrast($background));
+    opacity: 0.75;
+    &:hover {
+      opacity: 1;
+    }
+
     &_dropdown {
       display: none;
       width: 100%;
