@@ -65,8 +65,15 @@
   }
 }
 
-@mixin centerer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+// Function that calculates if color needs to be light or dark depending on the background color passed.
+// Credits to: https://codepen.io/davidhalford/pen/wlDxL
+@function color-contrast($background-color) {
+  $color-brightness: round((red($background-color) * 299) + (green($background-color) * 587) + (blue($background-color) * 114) / 1000);
+  $light-color: round((red(#ffffff) * 299) + (green(#ffffff) * 587) + (blue(#ffffff) * 114) / 1000);
+  
+  @if abs($color-brightness) < ($light-color / 2) {
+    @return white;
+  } @else {
+    @return black;
+  }
 }
