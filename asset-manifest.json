@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/gpt-3-landing/static/css/main.fd778e3a.css",
-    "main.js": "/gpt-3-landing/static/js/main.4c24b125.js",
+    "main.css": "/gpt-3-landing/static/css/main.19fc25e0.css",
+    "main.js": "/gpt-3-landing/static/js/main.8bee0475.js",
     "static/media/ai.png": "/gpt-3-landing/static/media/ai.aa60586ba1ba53762d94.png",
     "static/media/possibilities.png": "/gpt-3-landing/static/media/possibilities.525f13b61a2157d44de0.png",
+    "static/media/post.jpg": "/gpt-3-landing/static/media/post.daa4493d64ec75fe1df4.jpg",
     "static/media/users.png": "/gpt-3-landing/static/media/users.5cd2d6fbcd48bd63f106.png",
     "static/media/logo.svg": "/gpt-3-landing/static/media/logo.ec05d7962bf3c7969f823a15099dd40c.svg",
     "index.html": "/gpt-3-landing/index.html",
-    "main.fd778e3a.css.map": "/gpt-3-landing/static/css/main.fd778e3a.css.map",
-    "main.4c24b125.js.map": "/gpt-3-landing/static/js/main.4c24b125.js.map"
+    "main.19fc25e0.css.map": "/gpt-3-landing/static/css/main.19fc25e0.css.map",
+    "main.8bee0475.js.map": "/gpt-3-landing/static/js/main.8bee0475.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd778e3a.css",
-    "static/js/main.4c24b125.js"
+    "static/css/main.19fc25e0.css",
+    "static/js/main.8bee0475.js"
   ]
 }
