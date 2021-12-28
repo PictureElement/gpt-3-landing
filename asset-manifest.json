@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/gpt-3-landing/static/css/main.19fc25e0.css",
-    "main.js": "/gpt-3-landing/static/js/main.8bee0475.js",
-    "static/media/ai.png": "/gpt-3-landing/static/media/ai.aa60586ba1ba53762d94.png",
-    "static/media/possibilities.png": "/gpt-3-landing/static/media/possibilities.525f13b61a2157d44de0.png",
-    "static/media/post.jpg": "/gpt-3-landing/static/media/post.daa4493d64ec75fe1df4.jpg",
-    "static/media/users.png": "/gpt-3-landing/static/media/users.5cd2d6fbcd48bd63f106.png",
+    "main.css": "/gpt-3-landing/static/css/main.e9c7c2d7.css",
+    "main.js": "/gpt-3-landing/static/js/main.704be4a8.js",
+    "static/media/post.jpg": "/gpt-3-landing/static/media/post.54e33483e8af9d537538.jpg",
+    "static/media/ai.png": "/gpt-3-landing/static/media/ai.641eb93330c29be6013d.png",
+    "static/media/possibilities.png": "/gpt-3-landing/static/media/possibilities.945dcca1638a920092de.png",
     "static/media/logo.svg": "/gpt-3-landing/static/media/logo.ec05d7962bf3c7969f823a15099dd40c.svg",
     "index.html": "/gpt-3-landing/index.html",
-    "main.19fc25e0.css.map": "/gpt-3-landing/static/css/main.19fc25e0.css.map",
-    "main.8bee0475.js.map": "/gpt-3-landing/static/js/main.8bee0475.js.map"
+    "main.e9c7c2d7.css.map": "/gpt-3-landing/static/css/main.e9c7c2d7.css.map",
+    "main.704be4a8.js.map": "/gpt-3-landing/static/js/main.704be4a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.19fc25e0.css",
-    "static/js/main.8bee0475.js"
+    "static/css/main.e9c7c2d7.css",
+    "static/js/main.704be4a8.js"
   ]
 }
