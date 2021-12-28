@@ -55,7 +55,7 @@
   &__right {
     img {
       // display: none;
-      max-width: 130%;
+      width: 130%;
       height: auto;
       @media (max-width: 991.98px) {
         max-width: 100%;
