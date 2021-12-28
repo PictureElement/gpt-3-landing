@@ -6,8 +6,14 @@
 .post {
   height: 100%;
   background-color: $surface;
+  &__image-wrapper {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56%;
+  }
   &__image {
     width: 100%;
+    height: auto;
   }
   &__body {
     @include padding(2rem);
