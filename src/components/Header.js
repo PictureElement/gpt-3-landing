@@ -24,8 +24,6 @@ function Header() {
               </ul>
             </div>
           </div>
-
-
           <div className="header__right">
               <button type="button" className="header__signin">Sign in</button>
               <button type="button" className="header__signup">Sign up</button>
@@ -49,11 +47,6 @@ function Header() {
                 </div>
               }
           </div>
-
-      
-
-
-
         </nav>
       </div>
     </header>

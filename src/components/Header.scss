@@ -67,6 +67,11 @@
         a {
           display: block;
           padding: .5rem;
+          color: color-contrast($surface);
+          opacity: 1;
+          &:hover {
+            opacity: .75;
+          }
         }
       }
       button {
@@ -97,8 +102,9 @@
       opacity: .75;
     }
     &_dropdown {
-      display: none;
       width: 100%;
+      @include filled-button(color-contrast($surface));
+      display: none;
       @media (max-width: 575.98px) {
         display: block !important;
       }
@@ -130,7 +136,7 @@
     margin-left: 1rem;
     width: 44px;
     height: 44px;
-    @include filled-button(transparent);
+    @include filled-button($background);
     display: flex;
     align-items: center;
     justify-content: center;
