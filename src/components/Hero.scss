@@ -3,7 +3,6 @@
 @import '../styles/mixins';
 
 .hero {
-  // border: 1px solid red;
   overflow: hidden;
   &__container {
     display: flex;
@@ -55,6 +54,7 @@
   }
   &__right {
     img {
+      // display: none;
       max-width: 130%;
       height: auto;
       @media (max-width: 991.98px) {
@@ -62,7 +62,7 @@
       }
     }
   }
-  @media (max-width: 991.98px) {
+  @media (max-width: 1199.98px) {
     @include margin-top(4rem);
     @include margin-bottom(4rem);
   }
