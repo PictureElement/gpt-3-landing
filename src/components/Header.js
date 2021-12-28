@@ -31,8 +31,8 @@ function Header() {
               <button type="button" className="header__signup">Sign up</button>
               <div className="header__toggler-wrapper">
                 {isDropdownMenuVisible
-                  ? <button onClick={() => SetIsDropdownMenuVisible(false)} className="header__toggler" type="button" aria-controls="navbarSupportedContent" aria-label="Toggle navigation"><RiCloseLine /></button>
-                  : <button onClick={() => SetIsDropdownMenuVisible(true)} className="header__toggler" type="button" aria-controls="navbarSupportedContent" aria-label="Toggle navigation"><RiMenu3Line /></button>
+                  ? <button onClick={() => SetIsDropdownMenuVisible(false)} className="header__toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation"><RiCloseLine /></button>
+                  : <button onClick={() => SetIsDropdownMenuVisible(true)} className="header__toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><RiMenu3Line /></button>
                 }
               </div>
               {isDropdownMenuVisible &&
