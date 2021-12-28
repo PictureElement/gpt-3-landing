@@ -1,55 +1,55 @@
 // Dark theme
 
-// @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
-// $font-family: 'Manrope', sans-serif;
+$font-family: 'Manrope', sans-serif;
 
-// $text-gradient: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
-// $on-text-gradient: #000;
-
-// $bg-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(4, 44, 84, 1) 0%, rgba(4, 12, 24, 1) 50%);
-// $surface-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(27, 120, 222, 1) 0%, rgba(4, 44, 84, 1) 50%);
-// $surface-radial-gradient-bottom-right: radial-gradient(circle at 100% 100%, rgba(27, 120, 222, 1) 0%, rgba(4, 44, 84, 1) 50%);
-
-// $background: #040C18;
-// $on-background: #81AFDD;
-
-// $surface: #042C54;
-// $on-surface: #81AFDD;
-
-// $accent: #FF4820;
-
-// $h1-size: 3.375rem;
-// $h2-size: 2.25rem;
-// $h3-size: 1.5rem;
-
-// $rfs-factor: 10;
-
-// Light theme
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-$font-family: 'Poppins', sans-serif;
-
-$text-gradient: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+$text-gradient: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
 $on-text-gradient: #000;
 
-$radial-gradient: radial-gradient(circle at 0% 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+$bg-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(4, 44, 84, 1) 0%, rgba(4, 12, 24, 1) 50%);
+$surface-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgb(32, 82, 134) 0%, rgba(4, 44, 84, 1) 50%);
+$surface-radial-gradient-bottom-right: radial-gradient(circle at 100% 100%, rgb(32, 82, 134) 0%, rgba(4, 44, 84, 1) 50%);
 
-$bg-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(173, 211, 255, 1) 0%, rgba(255, 255, 255, 1) 50%);
-$surface-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(23, 74, 187, 1) 0%, rgba(4, 13, 33, 1) 50%);
-$surface-radial-gradient-bottom-right: radial-gradient(circle at 100% 100%, rgba(23, 74, 187, 1) 0%, rgba(4, 13, 33, 1) 50%);
+$background: #040C18;
+$on-background: #81AFDD;
 
-$background: #fff;
-$on-background: #627597;
+$surface: #042C54;
+$on-surface: #81AFDD;
 
-$surface: #040d21;
-$on-surface: #8193b2;
-
-$accent: #98CE00;
+$accent: #FF4820;
 
 $h1-size: 3.375rem;
 $h2-size: 2.25rem;
 $h3-size: 1.5rem;
 
 $rfs-factor: 10;
+
+// Light theme
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+// $font-family: 'Poppins', sans-serif;
+
+// $text-gradient: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+// $on-text-gradient: #000;
+
+// $radial-gradient: radial-gradient(circle at 0% 0%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+// $bg-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(173, 211, 255, 1) 0%, rgba(255, 255, 255, 1) 50%);
+// $surface-radial-gradient-top-left: radial-gradient(circle at 0% 0%, rgba(23, 74, 187, 1) 0%, rgba(4, 13, 33, 1) 50%);
+// $surface-radial-gradient-bottom-right: radial-gradient(circle at 100% 100%, rgba(23, 74, 187, 1) 0%, rgba(4, 13, 33, 1) 50%);
+
+// $background: #fff;
+// $on-background: #627597;
+
+// $surface: #040d21;
+// $on-surface: #8193b2;
+
+// $accent: #98CE00;
+
+// $h1-size: 3.375rem;
+// $h2-size: 2.25rem;
+// $h3-size: 1.5rem;
+
+// $rfs-factor: 10;

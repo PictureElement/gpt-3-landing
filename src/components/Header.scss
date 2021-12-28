@@ -137,8 +137,12 @@
     width: 44px;
     height: 44px;
     @include filled-button($background);
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
